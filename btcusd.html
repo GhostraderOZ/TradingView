@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gráfico Avançado TradingView</title>
+    <title>Gráfico Avançado TradingView BITICÓI</title>
     <style>
         .tradingview-widget-container {
-            width: 980px;
-            height: 610px;
+            height: 100%;
+            width: 100%;
         }
         .tradingview-widget-container__widget {
-            height: calc(610px - 32px);
+            height: calc(100% - 32px);
             width: 100%;
         }
         .tradingview-widget-copyright {
@@ -42,18 +42,25 @@
         </div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
         {
-        "width": "980",
-        "height": "610",
+        "autosize": true,
         "symbol": "BITSTAMP:BTCUSD",
         "interval": "D",
-        "timezone": "Etc/UTC",
-        "theme": "dark",
+        "timezone": "exchange",
+        "theme": "light",
+        "backgroundColor": "rgba(255, 255, 255, 1)",
         "style": "1",
-        "locale": "pt_BR",
+        "withdateranges": true,
+        "hide_side_toolbar": false,
         "allow_symbol_change": true,
+        "save_image": false,
         "studies": [
             "STD;RSI"
         ],
+        "locale": "pt_BR",
+        "show_popup_button": true,
+        "popup_width": "1000",
+        "popup_height": "650",
+        "calendar": false,
         "support_host": "https://www.tradingview.com"
         }
         </script>
